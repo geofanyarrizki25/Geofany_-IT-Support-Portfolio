@@ -1,15 +1,16 @@
+# Geofany IT Support Portfolio
 
-# Geofany Next.js Portfolio
+Personal portfolio website built with Next.js and Tailwind CSS.
 
-## Install
-```bash
-npm install
-```
+## Features
+- Responsive design
+- Dark futuristic UI
+- Smooth animations
+- IT Support showcase
 
-## Run
-```bash
-npm run dev
-```
+## Tech Stack
+- Next.js
+- Tailwind CSS
+- Framer Motion
 
-## Deploy
-Push ke GitHub lalu connect ke Vercel.
+## Live Demo
