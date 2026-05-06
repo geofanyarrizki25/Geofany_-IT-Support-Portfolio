@@ -754,15 +754,112 @@
 
     @media (max-width: 768px) {
 
+      .container {
+        padding: 0 18px;
+      }
+
+      nav .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+
       .nav-links {
-        display: flex;
-        flex-wrap: wrap;
+        display: flex !important;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 10px;
       }
 
       .nav-links a {
         font-size: 12px;
+      }
+
+      .hero {
+        padding: 60px 0 40px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        line-height: 1.1;
+      }
+
+      .hero-role {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .hero-bio {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .hero-cta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .hero-cta .btn {
+        width: auto;
+        padding: 10px 16px;
+        font-size: 11px;
+      }
+
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 18px;
+      }
+
+      .stat-num {
+        font-size: 22px;
+      }
+
+      .section-header {
+        flex-wrap: wrap;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .gallery,
+      .skills-grid,
+      .certs-grid,
+      .ticket-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item img {
+        height: 220px;
+      }
+
+      .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-links {
+        width: 100%;
+      }
+
+      .contact-link {
+        word-break: break-word;
+      }
+
+      .case-flow {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .flow-arrow {
+        display: none;
       }
 
       #music-btn {
@@ -772,135 +869,6 @@
         font-size: 12px;
       }
 
-    }
-
-    .container {
-      padding: 0 18px;
-    }
-
-    nav .container {
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .hero {
-      padding: 60px 0 40px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      line-height: 1.1;
-    }
-
-    .hero-role {
-      font-size: 13px;
-      line-height: 1.6;
-    }
-
-    .hero-bio {
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
-    .hero-cta {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .hero-cta .btn {
-      width: 100%;
-      text-align: center;
-    }
-
-    .stats-bar {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 18px;
-    }
-
-    .stat-num {
-      font-size: 22px;
-    }
-
-    .section-header {
-      flex-wrap: wrap;
-    }
-
-    .section-title {
-      font-size: 20px;
-    }
-
-    .gallery,
-    .skills-grid,
-    .certs-grid,
-    .ticket-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .gallery-item img {
-      height: 220px;
-    }
-
-    .exp-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .contact-bar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .contact-links {
-      width: 100%;
-    }
-
-    .contact-link {
-      word-break: break-word;
-    }
-
-    .case-flow {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .flow-arrow {
-      display: none;
-    }
-
-    #music-btn {
-      bottom: 14px;
-      right: 14px;
-      padding: 10px 14px;
-      font-size: 12px;
-    }
-    }
-
-    .stats-bar {
-      grid-template-columns: repeat(2, 1fr)
-    }
-
-    .skills-grid,
-    .certs-grid,
-    .ticket-grid,
-    .gallery {
-      grid-template-columns: 1fr
-    }
-
-    .ticket-card.full,
-    .cert-img-card {
-      grid-column: 1/-1
-    }
-
-    .nav-links {
-      display: none
-    }
     }
   </style>
 </head>
@@ -1448,120 +1416,6 @@
     /* =========================
    MOBILE FIX
 ========================= */
-    @media (max-width: 768px) {
-
-      .container {
-        padding: 0 18px;
-      }
-
-      nav .container {
-        flex-direction: column;
-        gap: 14px;
-        align-items: center;
-      }
-
-      .nav-logo {
-        text-align: center;
-      }
-
-      .nav-links {
-        display: flex !important;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-      }
-
-      .nav-links a {
-        font-size: 12px;
-      }
-
-      .hero {
-        padding: 60px 0 40px;
-      }
-
-      .hero h1 {
-        font-size: 48px;
-        line-height: 1.1;
-      }
-
-      .hero-role {
-        font-size: 13px;
-        line-height: 1.6;
-      }
-
-      .hero-bio {
-        font-size: 14px;
-        line-height: 1.8;
-      }
-
-      .hero-cta {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .hero-cta .btn {
-        width: auto;
-        flex: 1;
-        text-align: center;
-        min-width: 120px;
-      }
-
-      .stats-bar {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 18px;
-      }
-
-      .stat-num {
-        font-size: 22px;
-      }
-
-      .gallery,
-      .skills-grid,
-      .certs-grid,
-      .ticket-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-item img {
-        height: 220px;
-      }
-
-      .exp-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .contact-bar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .contact-links {
-        width: 100%;
-      }
-
-      .contact-link {
-        word-break: break-word;
-      }
-
-      .case-flow {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .flow-arrow {
-        display: none;
-      }
-
-      #music-btn {
-        bottom: 14px;
-        right: 14px;
-        padding: 10px 14px;
-        font-size: 12px;
-      }
-    }
   </style>
 </body>
 
