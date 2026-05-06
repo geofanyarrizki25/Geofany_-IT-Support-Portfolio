@@ -752,26 +752,135 @@
       color: var(--muted)
     }
 
-    @media(max-width:600px) {
-      .stats-bar {
-        grid-template-columns: repeat(2, 1fr)
+    @media (max-width: 768px) {
+
+      .container {
+        padding: 0 18px;
       }
 
-      .skills-grid,
-      .certs-grid,
-      .ticket-grid,
-      .gallery {
-        grid-template-columns: 1fr
-      }
-
-      .ticket-card.full,
-      .cert-img-card {
-        grid-column: 1/-1
+      nav .container {
+        flex-direction: column;
+        gap: 14px;
       }
 
       .nav-links {
-        display: none
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
       }
+
+      .hero {
+        padding: 60px 0 40px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        line-height: 1.1;
+      }
+
+      .hero-role {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .hero-bio {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .hero-cta .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 18px;
+      }
+
+      .stat-num {
+        font-size: 22px;
+      }
+
+      .section-header {
+        flex-wrap: wrap;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .gallery,
+      .skills-grid,
+      .certs-grid,
+      .ticket-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item img {
+        height: 220px;
+      }
+
+      .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-links {
+        width: 100%;
+      }
+
+      .contact-link {
+        word-break: break-word;
+      }
+
+      .case-flow {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .flow-arrow {
+        display: none;
+      }
+
+      #music-btn {
+        bottom: 14px;
+        right: 14px;
+        padding: 10px 14px;
+        font-size: 12px;
+      }
+    }
+
+    .stats-bar {
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    .skills-grid,
+    .certs-grid,
+    .ticket-grid,
+    .gallery {
+      grid-template-columns: 1fr
+    }
+
+    .ticket-card.full,
+    .cert-img-card {
+      grid-column: 1/-1
+    }
+
+    .nav-links {
+      display: none
+    }
     }
   </style>
 </head>
