@@ -1424,6 +1424,81 @@
     #music-btn:hover {
       opacity: 0.9;
     }
+
+    @media (max-width: 768px) {
+
+      .container {
+        padding: 0 18px;
+      }
+
+      nav .container {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 60px 0 40px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        line-height: 1.1;
+      }
+
+      .hero-role {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .hero-bio {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .hero-cta .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 18px;
+      }
+
+      .gallery,
+      .skills-grid,
+      .certs-grid,
+      .ticket-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .case-flow {
+        flex-direction: column;
+      }
+
+      .flow-arrow {
+        display: none;
+      }
+
+      #music-btn {
+        bottom: 14px;
+        right: 14px;
+        padding: 10px 14px;
+        font-size: 12px;
+      }
+    }
   </style>
 </body>
 
