@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <head>
   <meta charset="UTF-8">
@@ -1417,6 +1418,29 @@
    MOBILE FIX
 ========================= */
   </style>
+  <script>
+    ScrollReveal().reveal('.hero', {
+      distance: '40px',
+      duration: 1200,
+      easing: 'ease-out',
+      origin: 'bottom',
+      reset: false
+    });
+
+    ScrollReveal().reveal('.card', {
+      distance: '30px',
+      duration: 1000,
+      interval: 200,
+      origin: 'bottom'
+    });
+
+    ScrollReveal().reveal('section', {
+      distance: '20px',
+      duration: 900,
+      interval: 100
+    });
+  </script>
+
 </body>
 
 </html>
