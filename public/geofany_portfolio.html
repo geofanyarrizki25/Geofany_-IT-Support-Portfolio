@@ -1270,7 +1270,49 @@
     }
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLB(); });
   </script>
+  <audio id="bg-music" loop>
+    <source src="/Music.mp3" type="audio/mpeg">
+  </audio>
 
+  <button id="music-btn" onclick="toggleMusic()">
+    ▶ Music
+  </button>
+
+  <script>
+    const music = document.getElementById("bg-music");
+    const btn = document.getElementById("music-btn");
+
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+        btn.innerText = "⏸ Pause";
+      } else {
+        music.pause();
+        btn.innerText = "▶ Music";
+      }
+    }
+  </script>
+
+  <style>
+    #music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00e5a0;
+      color: #0a0e17;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    #music-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
 </body>
 
 </html>
