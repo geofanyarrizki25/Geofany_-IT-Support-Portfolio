@@ -714,7 +714,8 @@
       .skills-grid,
       .certs-grid,
       .ticket-grid,
-      .gallery {
+      .gallery,
+      .doc-grid {
         grid-template-columns: 1fr
       }
 
@@ -758,8 +759,13 @@ DOCUMENTATION
 
     .doc-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
+      align-items: start;
+    }
+
+    .doc-card {
+      width: 100%;
     }
 
     .doc-card {
