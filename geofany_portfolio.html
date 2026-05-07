@@ -1375,35 +1375,44 @@ DOCUMENTATION
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLB(); });
   </script>
   <script>
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.doc-card');
+    document.addEventListener("DOMContentLoaded", function () {
 
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const cards = document.querySelectorAll(".doc-card");
 
-        // active button
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+      filterButtons.forEach(button => {
 
-        const filter = button.getAttribute('data-filter');
+        button.addEventListener("click", function () {
 
-        cards.forEach(card => {
+          // remove active
+          filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+          });
 
-          if (filter === 'all') {
-            card.style.display = 'block';
-          } else {
+          // active current
+          this.classList.add("active");
 
-            if (card.classList.contains(filter)) {
-              card.style.display = 'block';
-            } else {
-              card.style.display = 'none';
+          const filter = this.getAttribute("data-filter");
+
+          cards.forEach(card => {
+
+            if (filter === "all") {
+              card.style.display = "block";
+              return;
             }
 
-          }
+            if (card.classList.contains(filter)) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+
+          });
 
         });
 
       });
+
     });
   </script>
 </body>
